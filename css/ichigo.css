@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*共通部分*/
+html {
+	font-size: 62.5%;
+}
+
+body {	
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-family: a-otf-ryumin-pr6n, serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+main {
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+/*ヘッダー部分*/
+.header-fixed{
+    position: fixed;           
+    top: 0px;                  
+    left: 0px;                 
+    width: 100%;               
+	height: 70px;             
+	background-color: rgba(255,255,255,0.9); 
+	border-bottom: solid 1.5px rgba(36, 29, 29, 0.1);
+}
+ 
+.header-bk{ 
+	content: "";
+	position: relative;
+}
+
+header{
+	background: url("TOP_nav_背景.jpg") repeat;
+	background-size: cover;
+	margin: 0 auto;
+
+}
+
+.logo1{
+	float: left;
+	margin: 12.5px 90px 12.5px 100px;
+}
+
+.inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gnav{
+	overflow: hidden;
+    display: flex;
+}
+
+#gnav ul{
+	list-style: none;
+	margin: 3px auto;
+	color: #555555;
+	font-size: 16px;
+}
+ 
+#gnav .link li {
+	display: inline-block;
+	line-height: 70px;
+	margin-right: 50px;
+} 
+	
+#gnav li a {
+	text-decoration: none;
+	color: #555555;
+}
+
+header a:hover{
+	opacity: 0.7;
+}
+
+.link {
+    font-weight: bold;
+}
+
+.btn-wrap {
+    display: flex;
+}
+
+.btn-contact a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #8F8F8F;
+    margin: 12px 0;
+    padding: 0 10px;
+}
+
+.btn-online a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border: 1px solid #8F8F8F;
+    margin: 12px 24px;
+    padding: 0 10px;
+}    
+
+/*メイン画像部分*/
+#ichigo_image{
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+}
+
+#about_strawberry {
+	clearfix: both;
+	overflow: hidden;
+	width: 690px;
+	margin: 0 auto;
+}
+
+#about_strawberry h3{
+	float: left;
+	width: 960px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #b9b9b9;
+	border-bottom: solid 1.5px #b9b9b9;
+    margin: 60px 0 30px;
+}
+
+#about_strawberry p{
+	float: left;
+	font-size: 18px;
+	line-height: 18px;
+	color: #b9b9b9;
+}
+
+#about_strawberry .deco1 {
+    margin-left: 40px;
+	font-size: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	color: #000;
+}
+
+.table{
+	overflow: hidden;
+	float: left;
+	border-collapse: collapse;
+	margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.table-img,
+.table-txt{
+	vertical-align: top;
+	width: 430px;
+	padding: 30px 0;
+}
+
+.box-img > img{
+	width: 60px;
+}
+
+.table-txt{
+	display: inline-block;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.table-txt span {
+    display: block;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+	color: #1D1B1B;
+    padding-bottom: 2px;
+}
+
+
+/*フッター部分*/
+footer {
+	overflow: hidden;
+	height: 50px;
+    font-size: 1.5rem;
+	line-height: 50px;
+	text-align: center;
+	border-top: 1px solid rgba(192,192,192,0.9);
+    margin-top: 30px;
+}
+
+/*スクリプト部分*/
+/*.Arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Arrow::before,
+.Arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.pageTop::before{
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid #7a0;
+    border-right: 1px solid #7a0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}*/
+
+.pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 150px;
+  background: #b9b9b9;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+.pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pagetop a::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f106';
+  font-weight: 900;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
