@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ========================
+	common setting start
+======================== */
+html {
+	font-size: 62.5%;
+}
+
+body{	
+    color: #323232;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-family: a-otf-ryumin-pr6n, serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-wrapper, .contact-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.contact-wrapper {
+    
+}
+main {
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+/* ========================
+	header setting start
+======================== */
+.header-fixed{
+    position: fixed;           
+    top: 0px;                  
+    left: 0px;                 
+    width: 100%;               
+	height: 70px;             
+	background-color: rgba(255,255,255,0.9); 
+	border-bottom: solid 1.5px rgba(36, 29, 29, 0.1);
+}
+ 
+.header-bk{ 
+	content: "";
+	position: relative;
+}
+
+header{
+	background: url("TOP_nav_背景.jpg") repeat;
+	background-size: cover;
+	margin: 0 auto;
+
+}
+
+.logo1{
+	float: left;
+	margin: 12.5px 90px 12.5px 100px;
+}
+
+.inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gnav{
+	overflow: hidden;
+    display: flex;
+}
+
+#gnav ul{
+	list-style: none;
+	margin: 3px auto;
+	color: #555555;
+	font-size: 16px;
+}
+ 
+#gnav .link li {
+	display: inline-block;
+	line-height: 70px;
+	margin-right: 50px;
+} 
+	
+#gnav li a {
+	text-decoration: none;
+	color: #555555;
+}
+
+header a:hover{
+	opacity: 0.7;
+}
+
+/* ========================
+	section setting start
+======================== */
+#contents {
+    margin: 0 auto;
+    padding-top: 97px;
+}
+
+.ttl {
+    color: #1D1B1B;
+    font-size: 4rem;
+    margin-bottom: 30px;
+
+    
+}
+
+.ttl span {
+	font-size: 2rem;
+    line-height: 2rem;
+	color: #b9b9b9;
+    margin-left: 15px;
+}
+
+.sct-ttl .sub-ttl {
+    display: inline-block;
+    position: relative;
+}
+
+.sct-ttl .sub-ttl::before, .sct-ttl .sub-ttl::after {
+    content: "";
+    position: absolute;
+    color: #dbdbdb;
+    font-size: 1rem;
+    display: block;
+    top: 50%;
+    height: 1px;
+}
+
+.link {
+    font-weight: bold;
+}
+
+.btn-wrap {
+    display: flex;
+}
+
+.btn-contact a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #8F8F8F;
+    margin: 12px 0;
+    padding: 0 10px;
+}
+
+.btn-online a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border: 1px solid #8F8F8F;
+    margin: 12px 24px;
+    padding: 0 10px;
+} 
+
+.contact-wrapper .formTbl th {
+      font-size: 1.8rem;
+      font-weight: normal;
+      width: 30%;
+      border: none;
+      border-bottom: 1px solid #E5E5E5;
+      background: none;
+      padding: 45px 30px 45px;
+      vertical-align: middle;
+      text-align: left;
+}
+
+.contact-wrapper .formTbl th .requireIcon {
+  background-color: #828282;
+  color: #fff;
+  font-size: 1rem;
+  padding: 3px 13px;
+  vertical-align: center;
+  margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-wrapper .formTbl td {
+  width: 70%;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 25px 30px;
+  vertical-align: middle;
+}
+
+.contact-wrapper .formTbl td input[type="text"],
+.contact-wrapper .formTbl td input[type="email"],
+.contact-wrapper .formTbl td input[type="tel"],
+.contact-wrapper .formTbl td select,
+.contact-wrapper .formTbl td textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #FFFFFF;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  min-height: 14px;
+  padding: 17px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.contact-wrapper {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact-btn {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-wrapper .contact-btn li {
+  list-style: none;
+  display: inline-block;
+  width: 35%;
+}
+
+.contact-wrapper .contact-btn li:nth-child(2) {
+  margin-left: 4%;
+}
+
+.contact-wrapper .contact-btn li input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-wrapper .contact-btn li input:hover {
+  opacity: 0.;
+}
+
+/*フッター部分*/
+footer {
+	overflow: hidden;
+	height: 50px;
+    font-size: 1.5rem;
+	line-height: 50px;
+	text-align: center;
+	border-top: 1px solid rgba(192,192,192,0.9);
+    margin-top: 90px;
+}
+
+/*スクリプト部分*/
+/*.Arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Arrow::before,
+.Arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.pageTop::before{
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid #7a0;
+    border-right: 1px solid #7a0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}*/
+
+.pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 150px;
+  background: #b9b9b9;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+.pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pagetop a::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f106';
+  font-weight: 900;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
