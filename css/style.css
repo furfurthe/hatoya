@@ -136,7 +136,7 @@ header a:hover{
 	overflow: hidden;
 	content: "";
 	position: relative;
-	background: url("../img/TOP_image/TOP_はとやについて_03.jpg") no-repeat;
+	background: url("img/TOP_image/TOP_はとやについて_03.jpg") no-repeat;
 	background-position: center;
 	width: 100%;
 	height: 300px;
@@ -187,7 +187,7 @@ header a:hover{
 
 /*苺部分*/
 #top_material{
-	background: url("../img/TOP_image/TOP_いちご背景.jpg") no-repeat;
+	background: url("img/TOP_image/TOP_いちご背景.jpg") no-repeat;
 	background-size: cover;
 	height: 500px;
 	margin-top: 90px;
@@ -355,7 +355,7 @@ margin-left: 11%;
 	overflow: hidden;
 	width: 100%;
 	height: 300px;
-	background: url("../img/TOP_image/bottom_banner.png") no-repeat;
+	background: url("img/TOP_image/bottom_banner.png") no-repeat;
 	background-position: center;
 	margin: 60px 0 0;
 }
@@ -485,4 +485,3 @@ footer {
   left: 0;
   margin: auto;
 }
-
